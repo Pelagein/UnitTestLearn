@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace UnitLearn
 {
-    public class Replace
+    public static class Replace
     {
-        public string MethodLetterReplace(string Word,char OldLetter,char NewLetter) 
+
+        public static string MethodLetterReplace(string Word,char OldLetter,char NewLetter) 
         {
             string NewWord="";
             foreach (char E in Word) 
