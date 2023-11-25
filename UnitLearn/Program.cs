@@ -12,12 +12,15 @@ namespace UnitLearn
         {
             Console.WriteLine("Введите слово в котором хотите заменить буквы:");
             string Word = Console.ReadLine();
+
             Console.WriteLine("Введите букву для замены:");
-            char OldLetter = Convert.ToChar(Console.ReadLine());
+            char OldLetter = char.Parse(Console.ReadLine());
+
             Console.WriteLine("Введите новую букву:");
-            char NewLetter = Convert.ToChar(Console.ReadLine());
-            Replace replace = new Replace();
-            Word=replace.MethodLetterReplace(Word,OldLetter,NewLetter);
+            char NewLetter = char.Parse(Console.ReadLine());
+
+          
+            Word=Replace.MethodLetterReplace(Word,OldLetter,NewLetter);
             Console.WriteLine($"Результат замены: {Word} ");
         }
     }
